@@ -25,16 +25,32 @@ public class JugadorAtaqueController : JugadorBehavior
         if (Input.GetKey(KeyCode.W))
         {
             direccion += Vector3.up;
+            if (Input.GetKey(KeyCode.A))
+            { 
+                direccion += Vector3.left;
+            }
+            if (Input.GetKey(KeyCode.D))
+            { 
+                direccion += Vector3.right;
+            }
         }
-        if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(KeyCode.S))
         {
             direccion += Vector3.down;
+            if (Input.GetKey(KeyCode.A))
+            {
+                direccion += Vector3.left;
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                direccion += Vector3.right;
+            }
         }
-        if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A))
         {
             direccion += Vector3.left;
         }
-        if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D))
         {
             direccion += Vector3.right;
         }
