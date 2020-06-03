@@ -123,12 +123,12 @@ TextureImporter:
       name: SpriteMagoCaminata - Abajo_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 77
         y: 0
-        width: 197.75
+        width: 106
         height: 166
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.47547632, y: 0.46881008}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,12 +144,12 @@ TextureImporter:
       name: SpriteMagoCaminata - Abajo_1
       rect:
         serializedVersion: 2
-        x: 197
+        x: 262
         y: 0
-        width: 197.75
+        width: 104
         height: 166
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.47510734, y: 0.4844051}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,12 +165,12 @@ TextureImporter:
       name: SpriteMagoCaminata - Abajo_2
       rect:
         serializedVersion: 2
-        x: 394
+        x: 443
         y: 0
-        width: 197.75
+        width: 104
         height: 166
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.46266058, y: 0.4766076}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,12 +186,12 @@ TextureImporter:
       name: SpriteMagoCaminata - Abajo_3
       rect:
         serializedVersion: 2
-        x: 591
+        x: 621
         y: 0
-        width: 197.75
+        width: 103
         height: 166
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5311902}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

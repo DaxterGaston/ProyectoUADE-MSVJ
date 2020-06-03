@@ -29,6 +29,7 @@ public class BolaDeFuegoController : MonoBehaviour
         posicionMouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         //Obtengo la direccion inicial de movimiento del proyectil.
         direccionMovimiento = posicionMouse - (Vector2)posicionDisparo.position;
+        direccionMovimiento.Normalize();
         //Seteo el momento de instanciamiento del objeto
         tiempoVidaProyectil = new Stopwatch();
         tiempoVidaProyectil.Start();

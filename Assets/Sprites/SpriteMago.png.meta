@@ -1,0 +1,353 @@
+fileFormatVersion: 2
+guid: 4cc1650a3421b6f44926ff1626e23b37
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6075374941453783157
+    second: SpriteMago_0
+  - first:
+      213: -4414595042201020007
+    second: SpriteMago_1
+  - first:
+      213: -4330858718536532826
+    second: SpriteMago_2
+  - first:
+      213: -7095935048211898646
+    second: SpriteMago_3
+  - first:
+      213: -6809164005095000454
+    second: SpriteMago_4
+  - first:
+      213: -6490067223698360665
+    second: SpriteMago_5
+  - first:
+      213: -2083087033585872223
+    second: SpriteMago_6
+  - first:
+      213: -6732776145058997503
+    second: SpriteMago_7
+  - first:
+      213: -4026167099638358132
+    second: SpriteMago_8
+  - first:
+      213: -1347173728883239710
+    second: SpriteMago_9
+  - first:
+      213: -7004936966166777681
+    second: SpriteMago_10
+  - first:
+      213: -8051727150883859727
+    second: SpriteMago_0
+  - first:
+      213: 6559831786618863865
+    second: SpriteMago_1
+  - first:
+      213: -7119723223470910531
+    second: SpriteMago_2
+  - first:
+      213: -7595561724239974457
+    second: SpriteMago_3
+  - first:
+      213: 2868891848166992897
+    second: SpriteMago_4
+  - first:
+      213: -8544431652971231585
+    second: SpriteMago_5
+  - first:
+      213: -7143989536816490935
+    second: SpriteMago_6
+  - first:
+      213: -7005134919616067060
+    second: SpriteMago_7
+  - first:
+      213: 3100102348572529625
+    second: SpriteMago_8
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteMago_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 366
+        width: 97
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2133fe0d4824090800000000000000
+      internalID: -8051727150883859727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteMago_1
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 375
+        width: 103
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0cbb32144390b50800000000000000
+      internalID: 6559831786618863865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteMago_2
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 373
+        width: 97
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3daed3379a13d90800000000000000
+      internalID: -7119723223470910531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteMago_3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 192
+        width: 98
+        height: 132
+      alignment: 9
+      pivot: {x: 0.5254374, y: 0.43704847}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf6f15dad4279690800000000000000
+      internalID: -7595561724239974457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteMago_4
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 193
+        width: 108
+        height: 127
+      alignment: 9
+      pivot: {x: 0.4692236, y: 0.47382793}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ce1059fe950d720800000000000000
+      internalID: 2868891848166992897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteMago_5
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 199
+        width: 97
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96cb059ea41c6980800000000000000
+      internalID: -8544431652971231585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteMago_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1
+        width: 92
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94612f2ed537bdc90800000000000000
+      internalID: -7143989536816490935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteMago_7
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 7
+        width: 107
+        height: 128
+      alignment: 9
+      pivot: {x: 0.46117023, y: 0.4675405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a8998c7e2c8ce90800000000000000
+      internalID: -7005134919616067060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteMago_8
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 0
+        width: 93
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3150639a6c50b20800000000000000
+      internalID: 3100102348572529625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
