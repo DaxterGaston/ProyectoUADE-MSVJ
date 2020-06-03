@@ -769,7 +769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   memoria: {fileID: 0}
-  velocidad: 3
+  velocidad: 5
   proyectil: {fileID: 1142752820819407983, guid: 00e5f9a52d5338d4aad9ee878c4d7286,
     type: 3}
 --- !u!212 &1966612224
