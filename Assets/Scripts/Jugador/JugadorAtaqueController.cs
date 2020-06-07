@@ -15,22 +15,31 @@ enum Direccion
 }
 public class JugadorAtaqueController : JugadorBehavior
 {
+    #region SetUp
     //TODO: Implementar pool para reutilizar instancias.
     //[SerializeField]
     //private PoolProyectiles pool;
     private Animator anim;
     [SerializeField]
     private float velocidad;
-
     [SerializeField]
     private GameObject proyectil;
-    
+
+    private Dictionary<int, Vector3> PosicionesInicialesJugador;
+
     private Vector3 direccion;
     void Start()
     {
         direccion = Vector3.zero;
         anim = GetComponent<Animator>();
+        Physics2D.IgnoreLayerCollision(8, 9);
+        PosicionesInicialesJugador = new Dictionary<int, Vector3>();
+        PosicionesInicialesJugador.Add(1, new Vector3(-10f, 3.5f, 9f));
+        PosicionesInicialesJugador.Add(2, new Vector3(13.5f, 0f, 9f));
+        PosicionesInicialesJugador.Add(3, new Vector3(37f, 0f, 9f));
+        PosicionesInicialesJugador.Add(4, new Vector3(61f, 0f, 9f));
     }
+    #endregion
 
     void Update()
     {
@@ -41,6 +50,7 @@ public class JugadorAtaqueController : JugadorBehavior
         }
 
         transform.position += direccion * velocidad * Time.deltaTime;
+        
         direccion = Vector3.zero;
     }
 
@@ -109,11 +119,19 @@ public class JugadorAtaqueController : JugadorBehavior
         }
     }
 
-
+    //Para disparar, instancio el proyectil. La direccion y velocidad se controla dentro del script del proyectil.
     private void Disparar()
     {
         Memoria.Set("posicionJugador", transform);
         Instantiate(proyectil, transform.position, transform.rotation);
+    }
+
+    public void CambiarEscenario(int nroEscenario)
+    {
+        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+        sprite.enabled = false;
+        transform.position = PosicionesInicialesJugador[nroEscenario];
+        sprite.enabled = true;
     }
 
 }

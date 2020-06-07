@@ -40,6 +40,7 @@ public class BolaDeFuegoController : MonoBehaviour
     void Update()
     {
         transform.position += direccionMovimiento * velocidad * Time.deltaTime;
+        transform.eulerAngles = Vector3.forward * 15;
         if (tiempoVidaProyectil.Elapsed > new TimeSpan(0, 0, 3))
         {
             Destroy(gameObject);
@@ -51,7 +52,6 @@ public class BolaDeFuegoController : MonoBehaviour
         Vector2 normal;
         if (collision.contacts[0].collider.CompareTag("Pared"))
         {
-            UnityEngine.Debug.Log("Choco!");
             normal = collision.contacts[0].normal;
             direccionMovimiento = Vector2.Reflect(direccionMovimiento, normal);
         }

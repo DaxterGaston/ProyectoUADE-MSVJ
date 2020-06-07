@@ -6,24 +6,30 @@ public class EnemigoController : MonoBehaviour
 {
     private float velocidad = 3f;
     private Vector2 direccion;
+    private float radioCirculo = 3f;
+    private ConoDeVision cv;
     // Start is called before the first frame update
     void Start()
     {
-        direccion = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
+        cv = GetComponent<ConoDeVision>();
+        //direccion = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += (Vector3)direccion * velocidad * Time.deltaTime;
+        Physics.OverlapSphere(transform.position, radioCirculo);
+        //transform.position += (Vector3)direccion * velocidad * Time.deltaTime;
+        cv.EncontrarObjetivosVisibles();
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.contacts[0].collider.tag == "Pared")
+        //Me voy para el lado contrario al chocar contra una pared.
+        if (collision.contacts[0].collider.CompareTag("Pared"))
         {
-            direccion = -direccion;
+            direccion = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
         }
-        if (collision.contacts[0].collider.tag == "Proyectil")
+        if (collision.contacts[0].collider.CompareTag("Proyectil"))
         {
             Destroy(gameObject);
         }

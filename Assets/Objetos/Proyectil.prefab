@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 883691367247742146}
   - component: {fileID: 2918939644925075521}
   - component: {fileID: 7218170687185943531}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Proyectil
   m_TagString: Proyectil
   m_Icon: {fileID: 0}
@@ -27,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142752820819407983}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.0012045075, y: -0, z: -0, w: 0.9999993}
   m_LocalPosition: {x: 2.2427344, y: -1.5536157, z: 8.1796875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.13800001, y: 0, z: 0}
 --- !u!212 &8156570511165882543
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 961b1cf4f73ecd741b55d19e74d406c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 5
+  velocidad: 10
 --- !u!50 &7218170687185943531
 Rigidbody2D:
   serializedVersion: 4
