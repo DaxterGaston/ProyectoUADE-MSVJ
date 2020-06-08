@@ -72,6 +72,9 @@
     <Compile Include="Assets\Scripts\GestionNiveles\CambioEscenaController.cs" />
     <Compile Include="Assets\Scripts\GestionNiveles\CambioEscenarioController.cs" />
     <Compile Include="Assets\Scripts\GestionNiveles\EscenaFinal.cs" />
+    <Compile Include="Assets\Scripts\GestionNiveles\MenuPrincipal\BotonControles.cs" />
+    <Compile Include="Assets\Scripts\GestionNiveles\MenuPrincipal\BotonJugar.cs" />
+    <Compile Include="Assets\Scripts\GestionNiveles\MenuPrincipal\BotonVolver.cs" />
     <Compile Include="Assets\Scripts\Jugador\Blackboard.cs" />
     <Compile Include="Assets\Scripts\Jugador\JugadorAtaqueController.cs" />
     <Compile Include="Assets\Scripts\Jugador\JugadorBehavior.cs" />

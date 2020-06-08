@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Ganaste.unity
-    guid: d3b95536cb1f98e4bbf96b78c9df34af
-  - enabled: 1
     path: Assets/Scenes/MenuPrincipal.unity
     guid: 754202b513952d74a9bc95dd6cb7049b
+  - enabled: 1
+    path: Assets/Scenes/Ganaste.unity
+    guid: d3b95536cb1f98e4bbf96b78c9df34af
   - enabled: 1
     path: Assets/Scenes/NivelAtaque.unity
     guid: 2cda990e2423bbf4892e6590ba056729
