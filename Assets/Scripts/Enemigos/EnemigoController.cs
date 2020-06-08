@@ -1,37 +1,58 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemigoController : MonoBehaviour
 {
-    private float velocidad = 3f;
+    private float velocidad = 8f;
     private Vector2 direccion;
     private float radioCirculo = 3f;
     private ConoDeVision cv;
-    // Start is called before the first frame update
+    private bool jugadorEncontrado;
+    [SerializeField]
+    private DireccionCono direccionVision;
     void Start()
     {
+        Physics2D.IgnoreLayerCollision(9, 9);
         cv = GetComponent<ConoDeVision>();
-        //direccion = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
+        cv.direccionEnum = direccionVision;
+        if (direccionVision == DireccionCono.Abajo)
+        {
+            GetComponent<Animator>().SetBool("MirandoAbajo", true);   
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        Physics.OverlapSphere(transform.position, radioCirculo);
-        //transform.position += (Vector3)direccion * velocidad * Time.deltaTime;
-        cv.EncontrarObjetivosVisibles();
+        if (jugadorEncontrado)
+        {
+            transform.position += (Vector3)direccion * velocidad * Time.deltaTime; ;
+        }
+        else
+        { 
+            Physics.OverlapSphere(transform.position, radioCirculo);
+            cv.EncontrarObjetivosVisibles(direccionVision);
+            foreach (Transform item in cv.objetivosVisibles)
+            {
+                if (item.CompareTag("Jugador"))
+                {
+                    item.GetComponent<JugadorAtaqueController>().movimiento = false;
+                    direccion = ((Vector2)item.position - (Vector2)transform.position).normalized;
+                    jugadorEncontrado = true;
+                }
+            }
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //Me voy para el lado contrario al chocar contra una pared.
-        if (collision.contacts[0].collider.CompareTag("Pared"))
+        if (collision.contacts[0].collider.CompareTag("Jugador"))
         {
-            direccion = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
+            Destroy(collision.contacts[0].collider.gameObject);
+            Camera.main.GetComponent<CambioEscenaController>().Perdiste();
         }
         if (collision.contacts[0].collider.CompareTag("Proyectil"))
         {
             Destroy(gameObject);
         }
     }
+
 }

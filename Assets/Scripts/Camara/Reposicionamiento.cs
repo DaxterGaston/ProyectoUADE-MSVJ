@@ -21,6 +21,7 @@ public class Reposicionamiento : MonoBehaviour
     {
         Debug.Log("Llamó a la camara");
         //transform.position = Vector3.MoveTowards(transform.position, PosicionesCamara[nroEscenario], Velocidad);
-        transform.Translate(PosicionesCamara[nroEscenario]);
+        //transform.Translate(PosicionesCamara[nroEscenario]);
+        transform.position = PosicionesCamara[nroEscenario];
     }
 }

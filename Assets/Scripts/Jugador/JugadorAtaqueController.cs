@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -24,6 +25,9 @@ public class JugadorAtaqueController : JugadorBehavior
     private float velocidad;
     [SerializeField]
     private GameObject proyectil;
+    public bool movimiento = true;
+    private TimeSpan intervaloDisparo;
+    private DateTime ultimoDisparo;
 
     private Dictionary<int, Vector3> PosicionesInicialesJugador;
 
@@ -38,15 +42,18 @@ public class JugadorAtaqueController : JugadorBehavior
         PosicionesInicialesJugador.Add(2, new Vector3(13.5f, 0f, 9f));
         PosicionesInicialesJugador.Add(3, new Vector3(37f, 0f, 9f));
         PosicionesInicialesJugador.Add(4, new Vector3(61f, 0f, 9f));
+        intervaloDisparo = new TimeSpan(0, 0, 2);
+        ultimoDisparo = new DateTime();
     }
     #endregion
 
     void Update()
     {
         GestionMovimiento();
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && movimiento && DateTime.Now >= ultimoDisparo.Add(intervaloDisparo))
         {
             Disparar();
+            ultimoDisparo = DateTime.Now;
         }
 
         transform.position += direccion * velocidad * Time.deltaTime;
@@ -63,6 +70,11 @@ public class JugadorAtaqueController : JugadorBehavior
     /// </summary>
     private void GestionMovimiento()
     {
+        if (!movimiento)
+        {
+            anim.SetBool("EnMovimiento", false);
+            return;
+        }
         anim.SetBool("EnMovimiento", true);
         //Arriba
         if (Input.GetKey(KeyCode.W))

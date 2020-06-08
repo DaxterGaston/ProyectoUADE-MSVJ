@@ -66,9 +66,12 @@
     <Compile Include="Assets\Scripts\BolaDeFuegoController.cs" />
     <Compile Include="Assets\Scripts\Camara\BackgroundLoop.cs" />
     <Compile Include="Assets\Scripts\Camara\Reposicionamiento.cs" />
-    <Compile Include="Assets\Scripts\CambioEscenarioController.cs" />
+    <Compile Include="Assets\Scripts\Enemigos\AlertaController.cs" />
     <Compile Include="Assets\Scripts\Enemigos\ConoDeVision.cs" />
     <Compile Include="Assets\Scripts\Enemigos\EnemigoController.cs" />
+    <Compile Include="Assets\Scripts\GestionNiveles\CambioEscenaController.cs" />
+    <Compile Include="Assets\Scripts\GestionNiveles\CambioEscenarioController.cs" />
+    <Compile Include="Assets\Scripts\GestionNiveles\EscenaFinal.cs" />
     <Compile Include="Assets\Scripts\Jugador\Blackboard.cs" />
     <Compile Include="Assets\Scripts\Jugador\JugadorAtaqueController.cs" />
     <Compile Include="Assets\Scripts\Jugador\JugadorBehavior.cs" />
